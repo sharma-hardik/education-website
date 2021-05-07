@@ -1,0 +1,133 @@
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    a{
+      text-decoration: none;
+    }
+    #Explore{
+      font-size: 2rem;
+            font-family: 'Oswald', sans-serif;
+            border:2px solid blue;
+            padding: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            border-radius: 1rem;
+            background-color: blue;
+            color: white;
+            top: 29rem;
+             left: 10rem;
+            position: fixed;
+            cursor: pointer;
+    }
+    .content{
+      width: 100%;
+      height: 40rem;
+      background-image:url("back.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+    }
+    #Explore:hover{
+      background-color: white;
+      color: blue;
+      border:2px solid blue;
+    }
+    .nav{
+      background-color:blue;
+    }
+    ul{
+       word-spacing: 4.5rem;
+    }
+    ul li{
+      cursor: pointer;
+      list-style: none;
+      display: inline;
+      font-size: 2rem;
+      font-family: 'Oswald', sans-serif;
+      color: white;
+      padding: .5rem;
+      border-radius: 4rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+    .nav{
+        border:0px solid orange;
+        position: sticky;
+        top: 0;
+        
+    }
+    .menu{
+      text-align: right;
+      padding: 1rem;
+      border:0px solid black;
+      box-sizing: border-box;
+    }
+    .fa-bars{
+      cursor: pointer;
+      font-size: 2.5rem;
+      color: white;
+    }
+    ul li:hover{
+      background-color: white;
+      color: blue;
+    }
+    /*-----------------Desktop and Laptop-------------*/
+    @media(min-width: 1204px){
+      .fa-bars{
+        display: none;
+        color: white;
+      }
+    }
+    @media(min-width: 989px) and (max-width: 1203px){
+      #Explore{
+        top: 27rem;
+      }
+      ul{
+        display: none;
+      }
+    }
+    /*-----------------Tablets and iPads-----------*/
+    @media(min-width: 769px) and (max-width: 990px){
+     html{
+      font-size: 12px;
+     }
+     #Explore{
+      top: 28rem;
+     }
+     .content{
+      height: 49rem;
+     }
+      ul li{
+           text-align: center;
+      }
+      ul{
+        display: none;
+      }
+    }
+    /*------------mobile phones-----------*/
+    @media(max-width: 768px){
+      ul {
+        display: none;
+      }
+    #Explore{
+      top: 24rem;
+      left: 6rem;
+    }
+    .content{
+      height: 48rem;
+       background-image:url("back.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-origin: right;
+      background-attachment: fixed;
+    }
+      html{
+        font-size: 12px;
+      }
+      ul li{
+           text-align: center;
+           display: block;
+      }

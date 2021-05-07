@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>practice</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="content">
+<div class="nav"  data-aos="fade-up-left">
+  <div class="menu">
+     <i class="fa fa-bars" onclick="myfun()"></i>
+    <ul id="blow">
+      <li>Home</li>
+      <li>Create</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+</div>
+<a href="#" id="Explore">Explore</a>
+</div>
+
+<script type="text/javascript">
+  var x=document.getElementById("blow");
+   function myfun() {
+     if (x.style.display=="none") {
+        x.style.display="block";
+     }
+     else{
+      x.style.display="none";
+     }
+   }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000
+    });
+  </script>
+</body>
+</html>
